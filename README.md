@@ -4,7 +4,17 @@ This is an API for detecting surgical tools from an input image. The API is deve
 
 ## Usage
 
-To use the API, you need to send a POST request to the /predict endpoint with an image file in the request body. The API will return a JSON object with the detected surgical tools and their confidence scores.
+To use the API, you need to send a POST request to the `/predict` endpoint with an image file in the request body. The API will return a JSON object with the detected surgical tools and their confidence scores.
+
+## API Endpoints
+
+The API provides the following endpoints:
+- `POST /object-to-json`: This endpoint takes an image file as input and returns a JSON response with the detected objects in the image. The response will contain a list of objects with their class name, confidence score, and bounding box coordinates.
+
+- `POST /object-to-img`: This endpoint takes an image file as input and returns a JSON response with the detected objects in the image, along with an image file with bounding boxes drawn around the detected objects.
+
+- `POST /image-segmentation`: This endpoint takes an image file as input and performs image segmentation using the FCN-32 ResNet50 model. The response will contain a base64-encoded image file with the segmented image.
+
 
 ## Installation
 
