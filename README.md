@@ -13,7 +13,7 @@ The API provides the following endpoints:
 
 - `POST /object-to-img`: This endpoint takes an image file as input and returns a JSON response with the detected objects in the image, along with an image file with bounding boxes drawn around the detected objects.
 
-- `POST /image-segmentation`: This endpoint takes an image file as input and performs image segmentation using the FCN-32 ResNet50 model. The response will contain a base64-encoded image file with the segmented image.
+- `POST /image-segmentation`: This endpoint takes an image file as input and performs image segmentation. The response will contain a base64-encoded image file with the segmented image.
 
 
 ## Installation
