@@ -27,7 +27,7 @@ cd FastApi_yolov5_semanticSegmentation-main
 pip install -r requirements.txt
 ```
 
-## Running the API
+## Running the API 
 
 To run the API, you need to start the FastAPI server using `uvicorn`:
 
